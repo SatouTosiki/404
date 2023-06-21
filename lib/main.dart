@@ -1,12 +1,28 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 
 void main() {
+=======
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'login/login_page.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:cupertino_icons/cupertino_icons.dart';
+import 'main2.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+      //options: DefaultFirebaseOptions.currentPlatform,
+      );
+>>>>>>> d01833fa517e41132f998d403b1e9312d1a67b52
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+<<<<<<< HEAD
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -101,6 +117,12 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
+=======
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: const MyHomePage(title: 'Flutter '),
+>>>>>>> d01833fa517e41132f998d403b1e9312d1a67b52
     );
   }
 }

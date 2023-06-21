@@ -6,6 +6,7 @@ import 'login/login_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:cupertino_icons/cupertino_icons.dart';
 
+
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
   final String title;
@@ -30,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Padding(
             padding: const EdgeInsets.only(right: 10),
             child: IconButton(
-              iconSize: 30,
+              iconSize: 70,
               icon: const Icon(
                 Icons.search_outlined,
                 color: Colors.blue,
